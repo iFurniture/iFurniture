@@ -62,6 +62,7 @@ input, textarea {
 .ihome { background-image: url('categorias/ihome-background.jpg');}
 .icoworking { background-image: url('categorias/icoworking-background.jpg');}
 
+
 .background-image { 
   background-image: url('background-image.jpg');
   color: white;
@@ -191,25 +192,41 @@ button {
   article {
     @include span-columns(6);
     position: relative;
-    height: 150px;
+    width: 30.82117%;
+    height: 320px;
     .horizontal-center {
       left: 50%;
-      width: 500px;
+      width: 350px;
       transform: translateX(-50%);
       -webkit-transform: translateX(-50%);
       position: absolute;
     }
     .description {
-      left: 180px;
+      left: 10px;
       position: absolute;
-      top: 15px;
-      p { margin: 10px 0; }
-      span { font-family: Lato; }
+      top: 110px;
+      p { margin: 10px 0; 
+      }
       span.fa-stack {
         color: $orange;
-        font-size: 16px;
-      }
+        font-size: 18px;
+        left: 90px;
+        }
+      span.team-rank{
+          font-family: Lato;
+          position: relative;
+          top: -40px;
+          font-size: 16px;
+          left: 130px;
+          }
     }
+    .team-name{
+    font-family: Lato;
+    position: relative;
+    top: -80px;
+    font-size: 22px;
+    }
+    
   }
 }
 .news {
